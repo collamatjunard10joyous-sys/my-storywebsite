@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Story | Personal Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sky"></div>
+<div id="stars"></div>
+<div id="orb" aria-hidden="true"></div>
+<div id="prog"></div>
+<div id="chap" aria-live="polite">Prologue</div>
+
+<main>
+ 
+  <section class="chapter" data-title="Prologue" id="prologue">
+    <div class="page hero">
+      <div id="lines" aria-live="polite"></div>
+      <div id="paths" hidden>
+        <p class="ask">Jump to any chapter of my story:</p>
+        <a class="btn" href="#c1">1. Where it began</a>
+        <a class="btn" href="#c2">2. My toolkit</a>
+        <a class="btn" href="#c3">3. After hours</a>
+        <a class="btn" href="#c4">4. The answer</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="chapter" data-title="Chapter 1: Where it began" id="c1">
+    <div class="page split">
+      <button class="photo" id="photoBtn" aria-label="Click my photo">
+        <span id="ini">JD</span>
+        <img src="nard.jpg" alt="Portrait of me" onerror="this.remove()">
+      </button>
+      <div>
+        <h2>Chapter 1: Where it began</h2>
+        <p id="c1text"></p>
+        <div class="chips" id="chips"></div>
+        <p id="factOut" class="factout" aria-live="polite">Tap a card to read more.</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="chapter" data-title="Chapter 2: My toolkit" id="c2">
+    <div class="page">
+      <h2>Chapter 2: The tools I picked up</h2>
+      <p>Every hero needs a bag of tricks. Tap an item to level it up.</p>
+      <div class="inv" id="inv"></div>
+    </div>
+  </section>
+
+  
+  <section class="chapter" data-title="Chapter 3: After hours" id="c3">
+    <div class="page">
+      <h2>Chapter 3: When I log off</h2>
+      <p>What I love doing when I’m not coding. Flip each card.</p>
+      <div class="scrap" id="scrap"></div>
+    </div>
+  </section>
+
+  
+  <section class="chapter" data-title="Chapter 4: The answer" id="c4">
+    <div class="page">
+      <h2>Chapter 4: The answer</h2>
+      <p>Remember the question I started with? Here’s what I’ve figured out so far. Tap each step.</p>
+      <div class="steps" id="steps"></div>
+      <p class="ending" id="ending" hidden></p>
+    </div>
+  </section>
+</main>
+
+<canvas id="fx"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
